@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(image/band.jpg);
+  background-repeat: no-repeat,repeat;
+  background-size:cover;
+  height: 400px;
+  background-position: center;
+}
+.keys{
+  width: 80%;
+  padding: 3px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5px;
+}
+.key{
+  width: 97px;
+  display: flex;
+  margin: 1rem;
+  padding: 1rem .5rem;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 8px;
+  transition: all 0.07s;
+  background: rgba(0, 0, 0, 0.4);
+}
+kbd{
+  color: #fff;
+  font-size: 40px;
+  display: block;
+}
+.sound{
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.playing{
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
